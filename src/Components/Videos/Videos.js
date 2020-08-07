@@ -7,9 +7,10 @@ function Videos() {
     // eslint-disable-next-line
     const [videos, setVideos] = React.useState(videos_data);
     const [video, setVideo] = React.useState(videos[active.current]);
-
+    console.log(videos.length);
     const NextVideo = () => {
-        if (active.current < videos.length) {
+        console.log(active.current);
+        if (active.current < videos.length - 1) {
             active.current++;
             setVideo(videos[active.current]);
         }
