@@ -33,7 +33,7 @@ function Swipe({ Component, SwipeLeft, SwipeRight, SwipeUp, SwipeDown }) {
             (deltaX > 0 && deltaY < 0 && degree <= 45)
         ) {
             // alert("left");
-            return SwipeLeft();
+            SwipeLeft();
             //Swipe Left
         }
     }
