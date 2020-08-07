@@ -9,12 +9,7 @@
 .App {
     position: relative;
 
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: scroll;
-    scroll-snap-type: y mandatory;
-}
-
-html {
-    scroll-snap-type: y mandatory;
 }

@@ -4,7 +4,8 @@ import videos_data from "../../data";
 
 function Videos() {
     var active = React.useRef(0);
-    const [videos] = React.useState(videos_data);
+    // eslint-disable-next-line
+    const [videos, setVideos] = React.useState(videos_data);
     const [video, setVideo] = React.useState(videos[active.current]);
 
     const NextVideo = () => {
